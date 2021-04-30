@@ -73,7 +73,7 @@ function Main(){
         <div className="container" style={{marginTop: "20px", marginBottom: "20px"}}>
             {/* search function */}
             <div className="input-group mb-3 float-center">
-                <input value={search} onChange={handleInputChange} type="text" className="form-control" placeholder="Search Employee by Name" aria-label="Recipient's username" aria-describedby="button-addon2"/>
+                <input value={search} onChange={handleInputChange} type="text" className="form-control" placeholder="Search Employee" aria-label="Recipient's username" aria-describedby="button-addon2"/>
                 <button className="btn btn-outline-danger" onClick={clearSearch}>Clear</button>
                 <button onClick={handleFormSubmit} className="btn btn-outline-primary" type="submit" id="button-addon2">Search</button>
             </div>
