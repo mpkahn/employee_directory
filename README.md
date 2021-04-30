@@ -10,7 +10,7 @@ This application uses react to create and display a dynamic and interactive empl
 
 * To run locally: 
 * Install npm (`npm i`). 
-* Install any other necessary modules (npm install bootstrap --save | npm install axios --save)
+* Install any other necessary modules (`npm install bootstrap --save` | `npm install axios --save`)
 * Once NPM is installed, run "npm start" to launch application and go to localhost/3000 in browser
 
 ## Usage 
@@ -18,6 +18,7 @@ This application uses react to create and display a dynamic and interactive empl
 * App hosted at https://shielded-ocean-89798.herokuapp.com/
 
 * On site, view list of employees:
+
 ![main page](assets/images/img1.jpg)
 * Type in employee name + hit "search" to search employees with that name
 * Hit "clear" to restore main employee list
