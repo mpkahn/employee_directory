@@ -6,10 +6,10 @@ function Directory(props){
         <table style={{width: "100%"}}>
             <thead>
                 <tr>
-                <th>Image</th>
+                <th>Picture</th>
                 <th>Name</th>
-                <th>Phone Number <button className='btn btn-outline-dark btn-sm' onClick={props.sortNumber}>Filter<i className="fas fa-filter"></i></button></th>
-                <th>Email <button className='btn btn-outline-dark btn-sm' onClick={props.sortEmail}>Filter<i className="fas fa-filter"></i></button></th>
+                <th>Phone Number <button className='btn btn-outline-dark btn-sm' onClick={props.sortNumber}>Sort<i className="fas fa-filter"></i></button></th>
+                <th>Email <button className='btn btn-outline-dark btn-sm' onClick={props.sortEmail}>Sort<i className="fas fa-filter"></i></button></th>
                 <th>Location</th>
                 </tr>
             </thead>

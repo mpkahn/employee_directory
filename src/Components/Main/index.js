@@ -21,21 +21,18 @@ function Main(){
         console.log(searchedUser)
         setUsers(searchedUser)
     }
+  
+
+    function handleFormSubmit(event){
+        event.preventDefault()
+        getSearchResults()
+    }
 
     function clearSearch(){
         setSearch("")
         getRandomUsers()
     }
 
-    function handleInputChange(event){
-        setSearch(event.target.value)
-        console.log(event.target.value)
-    }
-
-    function handleFormSubmit(event){
-        event.preventDefault()
-        getSearchResults()
-    }
 
     function sortEmail(){
         console.log('Sorting email')
@@ -50,6 +47,11 @@ function Main(){
         })
         console.log('Sorted List: ', sorted)
         setUsers([...sorted])
+    }
+
+    function handleInputChange(event){
+        setSearch(event.target.value)
+        console.log(event.target.value)
     }
 
     function sortNumber(){
@@ -76,7 +78,7 @@ function Main(){
                 <button onClick={handleFormSubmit} className="btn btn-outline-primary" type="submit" id="button-addon2">Search</button>
             </div>
             <div style={{display: "flex", justifyContent: "center",  margin: "auto", color: "gray"}}>
-                <p><small>Click columns below to filter employees</small></p>
+                <p><small>Use buttons below to sort employees</small></p>
             </div>
             <Directory list={users} sortEmail={sortEmail} sortNumber={sortNumber}/>
         </div>
